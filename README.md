@@ -9,14 +9,15 @@ This is a python port for the matplotlib library of the [R Package](https://gith
 
 The style for the charts is provided in the [styles](https://github.com/vork/farrowandball/tree/master/styles) folder
 
-# Installation
+## Installation
 
 A python version >= 3 is required.
+
 ```bash
-pip install farrow-and-ball
+python -m pip install farrow-and-ball
 ```
 
-# Usage
+## Usage
 
 The usage is quite simple:
 
@@ -41,7 +42,7 @@ plt.show()
 
 One can also directly get the color map definition as a list of strings with `farrow_and_ball.get_palette(DivergentPalette.DAY)` or an interpolated one with `farrow_and_ball.get_interpolated_palette(DivergentPalette.DAY, num_classes)`.
 
-# Palettes
+## Palettes
 
 The palettes are organized in Enums:
 
@@ -80,15 +81,17 @@ class MiscPalette(Enum):
 
 One can also directly enter the name as a string, e.g. `build_colormap("day", True)`.
 
-## Color Maps
+### Color Maps
 
-### Continuous
+#### Continuous
+
 ![Spectral Palette](https://github.com/vork/farrowandball/raw/master/images/continuous/SpectralPalette.png)
 ![Divergent Palette](https://github.com/vork/farrowandball/raw/master/images/continuous/DivergentPalette.png)
 ![Base Color Palette](https://github.com/vork/farrowandball/raw/master/images/continuous/BaseColorPalette.png)
 ![Misc Palette](https://github.com/vork/farrowandball/raw/master/images/continuous/MiscPalette.png)
 
-### Discrete
+#### Discrete
+
 ![Spectral Palette](https://github.com/vork/farrowandball/raw/master/images/discrete/SpectralPalette.png)
 ![Divergent Palette](https://github.com/vork/farrowandball/raw/master/images/discrete/DivergentPalette.png)
 ![Base Color Palette](https://github.com/vork/farrowandball/raw/master/images/discrete/BaseColorPalette.png)
